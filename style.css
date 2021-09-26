@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer{
+    width: 80vw;
+    margin: auto;
+}
+
+header{
+    
+    background-color: cadetblue;
+    color: white;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+}
+
+.picto img {
+    width: 10%;
+}
+
+.logo img{
+    width: 30%;
+}
+
+nav{
+    height: 70%;
+    width: 80%;
+    padding-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.recherche{
+    padding-top: 20px;
+}
+
+input{
+    width: 80%;
+}
+
+h1{
+    text-align: center;
+    color: cadetblue;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+h2, h3 {
+    color: coral;
+}
+
+h2{
+    margin: 4% 1% 2%;
+}
+
+h3{
+    margin: 2% 1% 2%;
+}
+
+.bg-div h2{
+    margin-left: 0;
+}
+
+.affiche{
+    margin-bottom: 5%;
+}
+
+.div1, .conf{
+    width: 97%;
+    margin: 0 1%;
+}
+
+.div1 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    column-gap: 5%;
+    row-gap: 10%;
+}
+
+.div1 img{
+    width: 100%;
+    height: auto;
+}
+
+.conf{
+    display: grid;
+    grid-template-areas: "bg a"
+                         "bg b" 
+                         "bg c" 
+                         "d  e";
+    grid-template-columns: 63% 35%;
+    grid-template-rows: 120px 120px 120px 120px;
+    column-gap: 2%;
+    row-gap: 5px;
+}
+
+.bg{
+    width: 100%;
+    background-image: url('img/bg.jpg');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    grid-area: bg;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-end;*/
+    position: relative;
+}
+
+.bg-div{
+    background-color: rgba(000, 000, 000, 0.6);
+    padding: 2%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bg-div h2{
+    color: white;
+}
+
+.atari{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+.atari1, .atari2, .atari3, .atari5{
+    font-size: 0.7em;
+    padding-top: 2%;
+}
+
+.atari img {
+    width: 100px;
+    margin: 2%;
+}
+
+.atari1{
+    grid-area: a;
+}
+
+.atari2{
+    grid-area: b;
+}
+
+.atari3{
+    grid-area: c;
+}
+
+.atari4{
+    grid-area: d;
+}
+
+.atari5{
+    grid-area: e;
+}
+
+footer{
+    height: 40px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-left: 10px;
+    background-color: cadetblue;
+    color: white;
+}
+
+/*correction de l'exercice:*/
+
+/*.prog {
+    margin-top: 40px;
+    display:grid;
+    grid-template-columns:30%30%30%;
+    grid-template-rows: auto;
+    column-gap:5%;
+    row-gap:15%;
+}
+
+.prog img{
+    width:100%;
+}
+
+.conf img{
+    width:100%
+}
+
+.img_art{
+    width:30%;
+}
+
+.conf article{
+    display: flex;
+}
+*/
